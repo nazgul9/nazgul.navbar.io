@@ -1,0 +1,62 @@
+body{
+	background-image: url(https://regnum.ru/uploads/pictures/news/2020/02/16/regnum_picture_1581834878161499_normal.jpg);	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+	z-index: 2;
+}
+.header{
+	position: relative;
+	display: flex;
+	justify-content: center;
+} 
+.header__lyst{
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+.header__item{
+	display: inline-block;
+	margin: 250px 0px 70px 90px;
+    margin-left: 250px;
+ }
+.header__link{
+	color:#ffffff;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 500;
+	position: relative;
+	display: block;
+	transition:0.4s;
+	padding: 14px;
+}
+ .header__link:hover{
+	color: rgb(4, 24, 4);
+}
+.header__link:hover:before{
+	transform: scale(1.2);
+	-webkit-transform: scaleY(1.2);
+	opacity: 1;
+}
+.header__link:hover:after{
+	transform: scale(1);
+	opacity: 1;
+}
+.header__link:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid hsl(150, 86%, 29%);
+	border-bottom: 1px solid  hsl(150, 86%, 29%);
+	transition: 0.4s;
+	transform: scaleY(2);
+	background: #0ff507;
+	z-index: -1;
+	opacity: 0; 
+}
+
